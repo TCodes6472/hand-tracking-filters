@@ -5,6 +5,6 @@
 </head>
 <body><main><header><div><h1>Hand FX</h1><p>Pinch the four corners to control the frame.</p></div><div class="status" id="status">📷 Camera off</div></header>
 <section class="menu"><button id="start">Start Camera</button><label>Effect <select id="effect"><option value="glitch">Glitch</option><option value="scan">Scanlines</option><option value="prism">Prism</option><option value="clean">Clean</option></select></label><label>Intensity <input id="intensity" type="range" min="0" max="100" value="70"></label><label class="check"><input id="points" type="checkbox" checked> Show fingertip points</label></section>
-<section class="stage"><video id="video" autoplay playsinline muted></video><canvas id="canvas"></canvas><div class="hint" id="hint">Allow camera access, then show both hands.</div></section>
+<section class="stage"><video id="video" autoplay playsinline muted></video><canvas id="canvas"></canvas><div class="hint" id="hint">Click Start Camera to begin, then show both hands.</div></section>
 <p class="note">Only the thumb + index fingertips are used for the effect. No hand skeleton is drawn.</p></main>
 <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script><script src="app.js"></script></body></html>
