@@ -1,21 +1,17 @@
-# Hand FX — Glitch Frame
+# Hand FX — Fingertip Frame
 
-A browser hand-tracking experiment inspired by short-form video effects. MediaPipe Hands provides 21 landmarks per detected hand, including fingertip landmarks used here to build a dynamic frame. citeturn0search0
+A browser hand-camera effect inspired by the four-corner fingertip frame effect shown in the reference video.
 
-## What changed
-- Two-hand tracking
-- Index + middle fingertips act as dynamic frame controls
-- Animated glitch/RGB/scanline frame
-- Neon frame mode
-- Corner reticles follow the fingertips
-- Live camera stays in the background
-- Responsive mobile layout
+### Tracking
+The UI only uses four fingertips: **left index, right index, right thumb, left thumb**. No hand skeleton or full-hand overlay is rendered. MediaPipe still analyzes the hand landmarks internally because that is how its browser hand tracker identifies the requested fingertips.
 
-## Run
-Open the GitHub Pages site over HTTPS and allow camera access. Camera processing happens in the browser; this demo does not upload the camera stream to a server.
+### Included
+- Existing menu retained
+- Two-hand detection
+- Four fingertip-controlled frame corners
+- Glitch, scanline, prism, and clean effects
+- Intensity control
+- Optional fingertip markers
+- Mobile-friendly layout
 
-## Controls
-1. Tap **Start Camera**.
-2. Hold both hands in view.
-3. Move your index/middle fingertips to resize and reposition the frame.
-4. Switch effects with the selector.
+Open the GitHub Pages URL over HTTPS and allow camera access.
