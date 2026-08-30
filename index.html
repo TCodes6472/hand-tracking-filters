@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hand FX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main><h1>Hand FX ✨</h1><p>Move your hands in front of the camera.</p><div class="controls"><button id="start">Start Camera</button><select id="filter"><option value="neon">Neon</option><option value="spark">Spark</option><option value="hearts">Hearts</option><option value="rings">Rings</option></select></div><div class="stage"><video id="video" autoplay playsinline></video><canvas id="canvas"></canvas><div id="status">Camera off</div></div></main>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="app.js"></script>
+</body></html>
