@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Hand Trail Filters</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="stage">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="canvas"></canvas>
+      <div id="start" class="start">
+        <button id="startBtn">Start camera</button>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <label>
+        Filter
+        <select id="filter">
+          <option value="neon">Neon</option>
+          <option value="rainbow">Rainbow</option>
+          <option value="electric">Electric</option>
+          <option value="fire">Fire</option>
+          <option value="sparkle">Sparkle</option>
+          <option value="galaxy">Galaxy</option>
+          <option value="hearts">Hearts</option>
+          <option value="frost">Frost</option>
+          <option value="ink">Ink</option>
+          <option value="pulse">Pulse</option>
+        </select>
+      </label>
+      <label>
+        Trail
+        <input id="length" type="range" min="8" max="42" value="24">
+      </label>
+    </footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
